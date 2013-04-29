@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Balloon</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css" class="style" />
+	
+	<script type="text/javascript">
+	<!--
+	function validate()
+	{
+	var extensions = new Array("jpg","jpeg","gif","png","bmp");
+
+	var image_file = document.form.image_file.value;
+
+	var image_length = document.form.image_file.value.length;
+
+	var pos = image_file.lastIndexOf('.') + 1;
+
+	var ext = image_file.substring(pos, image_length);
+
+	var final_ext = ext.toLowerCase();
+
+	for (i = 0; i < extensions.length; i++)
+	{
+	    if(extensions[i] == final_ext)
+	    {
+	    return true;
+	    }
+	}
+
+	alert("You must upload an image file with one of the following extensions: "+ extensions.join(', ') +".");
+	return false;
+	}
+	 //-->
+	 </script>
+</head>
+<body>
+	<header>
+		<div id="banner">
+			<img src="images/logo2.png" alt="Up Logo">
+			<h1>Balloon</h1>
+		</div>
+		<nav>
+			<ul id="navmenu">
+			<li><a href="home.html"><b>Home</b></a></li>
+			<li><a href="news.html"><b>News</b></a></li>
+			<li><a href="featured.html"><b>Featured</b></a></li>
+			<li><a href="about.html"><b>About Us</b></a>
+				<ul>
+					<li><a href="history.html">History</a></li>
+				</ul>
+			</li>
+			<li><b><a href="support.html">Support</a></b>
+				<ul>
+					<li><a href="terms.html">Privacy & Terms</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div style="width: 100%; margin-top: 3%;">
+		<hr class="top"/>
+	</div>
+	<div id="log_out">
+		<form name ="signin" action ="index.html" accept-charset="utf-8">
+			<input type="submit" value="Log Out">
+		</form>
+	</div>
+		<div id="profile">
+			<div id="userinfo">
+				<img src="profile/wei.jpg" alt="Avatar of Wei">
+				<div id="welcome">
+					<p style="font-size: 22px; font-weight: 800;">Welcome, <span style="color:#27b">Wei</span></p>
+					<p style=" color: #27b;">Joined: 25-3-2013<span style="margin-left: 10px; padding-left: 10px; border-left:2px solid;">Images set free: 5</span></p>
+				</div>
+				<div>
+					<form name="form" method="post" enctype="multipart/form-data" onSubmit ="return validate();">
+					<label for="file">Image:</label>
+					<input type="file" name="image_file" id="file"><br>
+					<input type="submit" name="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+		<div id="portfolio">
+		        <ul>
+		           	<li>	       
+		            	<img src="profile/image5.jpg" alt="Warehouse"/>
+					</li>
+		            <li>		           
+		            	<img src="profile/image1.jpg" alt="Fishing"/>   
+		            </li>          
+		            <li>		         
+		            	<img src="profile/image2.jpg" alt="Fishing"/>		            		 
+					</li>                       
+		            <li>
+		            	<img src="profile/image3.jpg" alt="Beach"/>		            
+		            </li>                       
+		            <li>
+		            	<img src="profile/image4.jpg" alt="Graffiti"/>		            
+		            </li>
+				</ul>
+		</div>	
+	</div>		
+		<hr class="bottom">
+		<footer>
+			<div id="footercontainer">
+			<div id="left">
+			<ul>
+				<li><a href="home.html"><b>Balloon</b></a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="featured.html">Featured</a></li>
+			</ul>
+			</div>
+			<div id="mid">
+			<ul>
+				<li><a href="about.html"><b>About Us</b></a></li>
+				<li><a href="history.html">History</a></li>
+			</ul>
+			</div>
+			<div id="right">
+			<ul>
+				<li><a href="support.html"><b>Support</b></a></li>
+				<li><a href="terms.html">Privacy & Terms</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="sitemap.html">Site Map</a></li>
+			</ul>
+			</div>
+			<div id="last">
+			<ul>
+				<li><a href="http://www.facebook.com/"><img src="images/facebook-32-black.png" alt="Up display" /></a></li>
+				<li><a href="https://twitter.com/"><img src="images/twitter-32-black.png" alt="Up display" /></a></li>
+			</ul>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>Copyright © 2013 Balloon Inc. All rights reserved.</p>
+			<p>Last Modified: Alistair Gillespie 25-3-2013</p>
+			<p>This site contains referenced information.</p>
+		</div>
+		</footer>	
+</body>
+</html>
